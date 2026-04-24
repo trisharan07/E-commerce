@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECom</title>
+    <!-- CSS link -->
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="shortcut icon" href="image/favicon.png" type="">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo"><img src="image/logo.PNG" alt=""></a>
+        <div class="searchbar-div">
+            <input class="searchbar" type="text" placeholder="Search">
+            <button class="search-btn"><img src="image/search.svg" alt=""></button>
+        </div>
+    
+    
+        <ul class="navmenu">
+            <li><a href="index.html">home</a></li>
+            <li><a href="#">shop</a></li>
+            <li><a class="products-popup" href="#">products</a></li>
+        </ul>
+    
+        <div class="nav-icon">
+            <i class='bx bx-user'></i>
+            <i class='bx bx-cart' id="cart-icon"></i>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    
+        <!-- <div class="products-pop">
+            <div class="products-names">
+                <div class="product-pop-row">
+                    <li><a href="#"><p>T-shirts</p></a></li>
+                    <li><a href="#"><img class="products-pop-img" src="image/img5.avif" alt=""></a></li>
+                </div>
+    
+                <div class="product-pop-row">
+                    <li><a href="#"><p>Shirts</p></a></li>
+                    <li><a href="#"><img class="products-pop-img" src="image/img8.avif" alt=""></a></li>
+                </div>
+    
+                <div class="product-pop-row">
+                    <li><a href="#"><p>Hoodies</p></a></li>
+                    <li><a href="#"><img class="products-pop-img" src="image/img3.avif" alt=""></a></li>
+                </div>
+    
+                <div class="product-pop-row">
+                    <li><a href="#"><p>Shoes</p></a></li>
+                    <li><a href="#"><img class="products-pop-img" src="image/img2.avif" alt=""></a></li>
+                </div>
+    
+                <div class="product-pop-row">
+                    <li><a href="#"><p>Trousers</p></a></li>
+                    <li><a href="#"><img class="products-pop-img" src="image/img7.avif" alt=""></a></li>
+                </div>
+    
+                <div class="product-pop-row">
+                    <li><a href="#"><p>Sunglasses</p></a></li>
+                    <li><a href="#"><img class="products-pop-img" src="image/img4.avif" alt=""></a></li>
+                </div>
+    
+            </div>
+        </div> -->
+    
+        <!-- cart codes -->
+<div class="cart">
+    <h2 class="cart-title">My Cart</h2>
+    <!-- cart content -->
+    <div class="cart-content">
+        
+        <!-- Cart close btn -->
+        <i class='bx bx-x' id="close-cart"></i>
+    </div>
+    <div class="total">
+        <div class="total-title">Total</div>
+        <div class="total-price">$0</div>
+    </div>
+    <!-- Buy button -->
+    <button type="button" class="btn-buy">Checkout</button>
+</div>
+
+    </header>
+    
+    
+    
+    
+    
+    <section class="main-home">
+        <div class="main-text">
+            <h5>Our Collection</h5>
+            <h1>New<br> Collection 2023</h1>
+            <p>We always provide trending collection!</p>
+    
+            <a href="#" class="main-btn">Shop Now <i class='bx bx-right-arrow-alt'></i></a>
+        </div>
+    </section>
+    
+    <!-- products-section -->
+    <section class="trending-product" id="trending">
+        <div class="center-text">
+            <h2>Our <span>products</span></h2>
+        </div>
+    
+        <div class="products">
+            <!-- 1st row -->
+            <div class="product-box">
+                <div class="product-image">
+                    <img class="product-img" src="image/img1.avif" alt="">
+                    <i class='bx bx-cart add-cart' style='color:#ffffff'></i>
+                </div>
+                <div class="product-text">
+                    <h5>Best seller</h5>
+                </div>
+                <div class="heart-icon">
+                    <i class='bx bx-heart'></i>
+                </div>
+    
+                <div>
+                    <h4 class="product-title">Diors men's half sleeve shirt - Red</h4>
+                    <p class="price">₹1200</p>
+                </div>
+            </div>
+    
+            <!-- 2nd row -->
+            <div class="product-box">
+                <div class="product-image">
+                    <img class="product-img" src="image/img8.avif" alt="">
+                    <i class='bx bx-cart add-cart' style='color:#ffffff'></i>
+                </div>
+                <div class="product-text">
+                    <h5>Best seller</h5>
+                </div>
+                <div class="heart-icon">
+                    <i class='bx bx-heart'></i>
+                </div>
+    
+                <div class="product-desc">
+                    <h4 class="product-title">Diors men's full sleeve shirt</h4>
+                    <p class="price">₹2300</p>
+                </div>
+            </div>
+    
+            <!-- 3rd row -->
+            <div class="product-box">
+                <div class="product-image">
+                    <img class="product-img" src="image/img2.avif" alt="">
+                    <i class='bx bx-cart add-cart' style='color:#ffffff'></i>
+                </div>
+                <div class="product-text">
+                    <h5>Just in</h5>
+                </div>
+                <div class="heart-icon">
+                    <i class='bx bx-heart'></i>
+                </div>
+    
+                <div>
+                    <h4 class="product-title">Diors men's Shoes</h4>
+                    <p class="price">₹1800</p>
+                </div>
+            </div>
+    
+            <!-- 4th row -->
+            <div class="product-box">
+                <div class="product-image">
+                    <img class="product-img" src="image/img3.avif" alt="">
+                    <i class='bx bx-cart add-cart' style='color:#ffffff'></i>
+                </div>
+                <div class="product-text">
+                    <h5>Just in</h5>
+                </div>
+                <div class="heart-icon">
+                    <i class='bx bx-heart'></i>
+                </div>
+    
+                <div>
+                    <h4 class="product-title">Diors men's hoodie </h4>
+                    <p class="price">₹1500</p>
+                </div>
+            </div>
+    
+            <!-- 5th row -->
+            <div class="product-box">
+                <div class="product-image">
+                    <img class="product-img" src="image/img4.avif" alt="">
+                    <i class='bx bx-cart add-cart' style='color:#ffffff'></i>
+                </div>
+                <div class="product-text">
+                    <h5>Sale</h5>
+                </div>
+    
+                <div class="heart-icon">
+                    <i class='bx bx-heart'></i>
+                </div>
+    
+                <div>
+                    <h4 class="product-title">Diors men's Sunglasses</h4>
+                    <p class="price">₹1700</p>
+                </div>
+            </div>
+    
+            <!-- 6th row -->
+            <div class="product-box">
+                <div class="product-image">
+                    <img class="product-img" src="image/img5.avif" alt="">
+                    <i class='bx bx-cart add-cart' style='color:#ffffff'></i>
+                </div>
+                <div class="product-text">
+                    <h5>Just in</h5>
+                </div>
+                <div class="heart-icon">
+                    <i class='bx bx-heart'></i>
+                </div>
+    
+                <div>
+                    <h4 class="product-title">Diors men's half sleeve T-shirt</h4>
+                    <p class="price">₹1200</p>
+                </div>
+            </div>
+    
+            <!-- 7th row -->
+            <div class="product-box">
+                <div class="product-image">
+                    <img class="product-img" src="image/img6.webp" alt="">
+                    <i class='bx bx-cart add-cart' style='color:#ffffff'></i>
+                </div>
+                <div class="product-text">
+                    <h5>Sale</h5>
+                </div>
+                <div class="heart-icon">
+                    <i class='bx bx-heart'></i>
+                </div>
+    
+                <div>
+                    <h4 class="product-title">Diors men's Cap</h4>
+                    <p class="price">₹900</p>
+                </div>
+            </div>
+    
+            <!-- 8th row -->
+            <div class="product-box">
+                <div class="product-image">
+                    <img class="product-img" src="image/img7.avif" alt="">
+                    <i class='bx bx-cart add-cart' style='color:#ffffff'></i>
+                </div>
+                <div class="product-text">
+                    <h5>Just in</h5>
+                </div>
+                <div class="heart-icon">
+                    <i class='bx bx-heart'></i>
+                </div>
+    
+                <div>
+                    <h4 class="product-title">Diors men's slim fit Pant</h4>
+                    <p class="price">₹1800</p>
+                </div>
+            </div>
+    
+            <!-- 9th row -->
+            <div class="product-box">
+                <div class="product-image">
+                    <img class="product-img" src="image/img5.avif" alt="">
+                    <i class='bx bx-cart add-cart' style='color:#ffffff'></i>
+                </div>
+                <div class="product-text">
+                    <h5>Just in</h5>
+                </div>
+                <div class="heart-icon">
+                    <i class='bx bx-heart'></i>
+                </div>
+    
+                <div>
+                    <h4 class="product-title">Diors men's half sleeve T-shirt - Red</h4>
+                    <p class="price">₹1200</p>
+                </div>
+            </div>
+    
+            <!-- 10th row -->
+            <div class="product-box">
+                <div class="product-image">
+                    <img class="product-img" src="image/img10.avif" alt="">
+                    <i class='bx bx-cart add-cart' style='color:#ffffff'></i>
+                </div>
+                <div class="product-text">
+                    <h5>Just in</h5>
+                </div>
+                <div class="heart-icon">
+                    <i class='bx bx-heart'></i>
+                </div>
+    
+    
+                <div>
+                    <h4 class="product-title">Diors men's half sleeve shirt - Olive</h4>
+                    <p class="price">₹1200</p>
+                </div>
+            </div>
+    
+            <!-- 11th row -->
+            <div class="product-box">
+                <div class="product-image">
+                    <img class="product-img" src="image/img11.webp" alt="">
+                    <i class='bx bx-cart add-cart' style='color:#ffffff'></i>
+                </div>
+                <div class="product-text">
+                    <h5>Just in</h5>
+                </div>
+                <div class="heart-icon">
+                    <i class='bx bx-heart'></i>
+                </div>
+    
+                <div>
+                    <h4 class="product-title">Diors men's Perfume</h4>
+                    <p class="price">₹1900</p>
+                </div>
+            </div>
+    
+            <!-- 12th row -->
+            <div class="product-box">
+                <div class="product-image">
+                    <img class="product-img" src="image/img12.avif" alt="">
+                    <i class='bx bx-cart add-cart' style='color:#ffffff'></i>
+                </div>
+                <div class="product-text">
+                    <h5>Just in</h5>
+                </div>
+                <div class="heart-icon">
+                    <i class='bx bx-heart'></i>
+                </div>
+    
+                <div>
+                    <h4 class="product-title">Diors men's hoodie - Black printed</h4>
+                    <p class="price">₹1200</p>
+                </div>
+            </div>
+        </div>
+    
+    </section>
+    
+    <!-- contact-section -->
+    <div class="five2">
+        <h4>Subscribe</h4>
+        <p>Receive Updates, Hot Deals, Discounts Sent Straight to Your Inbox Daily</p>
+        <input class="placeholder" placeholder="Email">
+        <button class="button-let" type="button" onclick="">Let me in!</button>
+    </div>
+    
+    
+    <section class="contact">
+        <div class="contact-info">
+            <div class="first-info">
+                <img src="image/logo.png" alt="">
+    
+                <p>Parvati paytha, <br> Parvati, Pune 411009</p>
+                <p>+91 7559160163</p>
+                <p>checksathe2003@gmail.com</p>
+    
+                <div class="social-icon">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://twitter.com/TrisharanS6581"><i class='bx bxl-twitter'></i></a>
+                    <a href="https://www.instagram.com/trisharan.sathe/"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://www.linkedin.com/in/trisharan-sathe-8114231b1/"><i class='bx bxl-linkedin'></i></a>
+                </div>
+            </div>
+    
+            <div class="second-info">
+                <h4>Support</h4>
+                <p>About us</p>
+                <p>Size Guide</p>
+                <p>Orders & Returns</p>
+            </div>
+    
+            <div class="third-info">
+                <h4>Shop with us</h4>
+                <a href="#" class="logo1"><img src="image/logo.PNG" alt=""></a>
+                <p>Men's Shopping</p>
+                <p>Women's Shopping</p>
+                <p>Discount</p>
+            </div>
+    
+            <div class="fourth-info">
+                <h4>Company</h4>
+                <p>About</p>
+                <p>Login</p>
+            </div>
+    
+            <div class="five">
+                <h4>Subscribe</h4>
+                <p>Receive Updates, Hot Deals, Discounts Sent Straight to Your Inbox Daily</p>
+                <input type="email" class="placeholder" placeholder="Email"><br>
+                <button class="button-let" type="button" onclick="alert(`You are in.`)">Let me in!</button>
+            </div>
+        </div>
+    </section>
+    
+    <div class="end-text">
+        <p>Copyright © Trisharan Sathe. All Rights Reserved.</p>
+    </div>
+    
+    
+    <script src="add_to_cart.js"></script>
+</body>
+</html>    
